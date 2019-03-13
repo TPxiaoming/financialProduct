@@ -1,0 +1,9 @@
+rootProject.name = 'financialProduct'
+include 'entity'
+include 'manager'
+include 'util'
+include 'api'
+include 'swagger'
+include 'seller'
+include 'quartz'
+
