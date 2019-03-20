@@ -15,13 +15,16 @@ ext {
             jsonrpc     :[
                     "com.github.briandilley.jsonrpc4j:jsonrpc4j:1.5.3"
             ],
-            test   : [
+            test   :[
                     "org.springframework.boot:spring-boot-starter-test:${versions.springBootVersion}"
-
             ],
             swagger     :[
                     "io.springfox:springfox-swagger2:2.7.0",
                     "io.springfox:springfox-swagger-ui:2.7.0"
+            ],
+            hazelcast   :[
+                    'com.hazelcast:hazelcast:3.8.6',
+                    'com.hazelcast:hazelcast-spring:3.8.6',
             ]
     ]
 }
