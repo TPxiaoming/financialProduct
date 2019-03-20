@@ -2,6 +2,8 @@ package com.xiaoming.manager.controller;
 
 import com.xiaoming.entity.Product;
 import com.xiaoming.manager.service.ProductService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +19,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/products")
+//@Api(tags = "product",description = "产品相关")
 public class ProductController {
 
     private static Logger LOG = LoggerFactory.getLogger(ProductController.class);
@@ -24,6 +27,7 @@ public class ProductController {
     @Autowired
     private ProductService productService;
 
+    @ApiOperation(value = "创建产品", notes = "根据对应业务规则添加相应的产品")
     @RequestMapping(value = "", method = RequestMethod.POST)
     public Product addProduct(@RequestBody Product product){
         LOG.info("创建产品，参数：{}", product);
@@ -32,7 +36,8 @@ public class ProductController {
         return result;
     }
 
-    @RequestMapping(value = "/id", method = RequestMethod.GET)
+    @ApiOperation(value = "查询单个产品", notes = "根据指定编号查询指定产品")
+    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     public Product findOne(@PathVariable String id){
         LOG.info("查询单个产品，id={}", id);
         Product product = productService.findOne(id);

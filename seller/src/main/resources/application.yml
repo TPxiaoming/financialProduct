@@ -1,0 +1,19 @@
+server:
+  servlet:
+    context-path: /seller
+  port: 8082
+
+#rpc.manager.url: http://localhost:8081/manager/
+logging:
+  level:
+    com.googlecode.jsonrpc4j: debug
+
+rpc:
+  client:
+    url: http://localhost:8081/manager/
+    basePackage: com.xiaoming.api
+
+spring:
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss.SSS
+    time-zone: GMT+8

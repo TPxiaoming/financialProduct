@@ -1,9 +1,13 @@
 package com.xiaoming.entity;
 
 import com.xiaoming.entity.enums.ProductStatus;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 
@@ -11,13 +15,15 @@ import java.util.Date;
  * 产品类
  */
 @Entity
-public class Product {
+//@ApiModel(value = "ppp" , description = "产品实体")
+public class Product implements Serializable {
     @Id
     private String id;
     private String name;
     /**
      * @see com.xiaoming.entity.enums.ProductStatus
      */
+    @ApiModelProperty(value = "状态", dataType = "com.xiaoming.entity.enums.ProductStatus")
     private String status;
     //起投金额
     private BigDecimal thresholdAmount;
