@@ -13,7 +13,7 @@ public class HazelcastMapTest {
     @Autowired
     private HazelcastInstance hazelcastInstance;
 
-    @PostConstruct
+    //@PostConstruct
     public  void put(){
         Map map = hazelcastInstance.getMap("xiaoming");
         map.put("name","xiaoming");

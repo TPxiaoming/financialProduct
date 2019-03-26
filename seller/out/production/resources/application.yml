@@ -17,3 +17,13 @@ spring:
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss.SSS
     time-zone: GMT+8
+  cache:
+    type: hazelcast
+  activemq:
+    broker-url: tcp://127.0.0.1:61616
+    packages:
+      trust-all: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/saller?user=root&password=123456&useUnicode=true&characterEncoding=utf-8
+    jpa:
+      show-sql: true

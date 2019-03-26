@@ -1,5 +1,6 @@
 package com.xiaoming.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.xiaoming.entity.enums.OrderStatus;
 import com.xiaoming.entity.enums.OrderType;
 
@@ -39,8 +40,10 @@ public class Order {
 
     private String memo;
 
+    @JsonFormat(pattern = "YYYY-MM-DD HH:mm:ss")
     private Date createAt;
 
+    @JsonFormat(pattern = "YYYY-MM-DD HH:mm:ss")
     private Date updateAt;
 
     @Override
