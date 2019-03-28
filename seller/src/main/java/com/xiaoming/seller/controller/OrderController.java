@@ -1,14 +1,13 @@
 package com.xiaoming.seller.controller;
 
 import com.xiaoming.entity.Order;
+import com.xiaoming.seller.params.OrderParam;
 import com.xiaoming.seller.service.OrderService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.lang.reflect.Method;
 
@@ -28,12 +27,14 @@ public class OrderController {
     /**
      * 下单
      *
-     * @param order
+     * @param param
      * @return
      */
     @RequestMapping(value = "/apply",method = RequestMethod.POST)
-    public Order apply(@RequestBody Order order){
-        LOG.info("申购请求:{}",order);
+    public Order apply(@RequestHeader String authid, @RequestHeader String sign, @RequestBody OrderParam param){
+        LOG.info("申购请求:{}",param);
+        Order order = new Order();
+        BeanUtils.copyProperties(param, order);
         order = orderService.apply(order);
         LOG.info("申购结果:{}",order);
         return order;

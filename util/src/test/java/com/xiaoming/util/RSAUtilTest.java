@@ -28,7 +28,7 @@ public class RSAUtilTest {
 
     @Test
     public void signTest(){
-        String text = "xiaoming";
+        String text = "{\"amount\":10,\"chanId\":\"111\",\"chanUserId\":\"123\",\"createAt\":\"2019-12-364 06:11:20\",\"memo\":\"string\",\"orderId\":\"string\",\"outerOrderId\":\"100001\",\"productId\":\"001\"}";
         String sign = RSAUtil.sign(text, privateKey);
         System.out.println(sign);
         System.out.println(RSAUtil.verify(text, sign, publicKey));
