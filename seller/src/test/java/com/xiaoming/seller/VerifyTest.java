@@ -33,4 +33,10 @@ public class VerifyTest {
         Date day = new GregorianCalendar(2018,11,30).getTime();
         verifyService.saveChanOrders("111", day);
     }
+
+    @Test
+    public void verifyOrderTest(){
+        Date day = new GregorianCalendar(2018,11,30).getTime();
+        System.out.println(String.join(";", verifyService.verifyOrder("111",day)));
+    }
 }

@@ -7,6 +7,7 @@ import org.aspectj.util.FileUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
+import org.w3c.dom.ls.LSInput;
 
 import java.io.File;
 import java.io.IOException;
@@ -52,6 +53,19 @@ public class VerifyService {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        Date start = getStartOfDate(day);
+        Date end = add24Hours(start);
+        List<String> orders = verifyRepository.queryVerificationOrders(chanId, start, end);
+        String content = String.join(END_LINE, orders);
+        FileUtil.writeAsString(path, content);
+        return path;
+    }
+
+    private Date add24Hours(Date start) {
+        return new Date(start.getTime() + 1000 * 60 * 60 * 24);
+    }
+
+    private Date getStartOfDate(Date day) {
         //构造起止时间
         String start_str = DAY_FORMAT.format(day);
         Date start = null;
@@ -60,11 +74,7 @@ public class VerifyService {
         } catch (ParseException e) {
             e.printStackTrace();
         }
-        Date end = new Date(start.getTime() + 1000 * 60 * 60 * 24);
-        List<String> orders = verifyRepository.queryVerificationOrders(chanId, start, end);
-        String content = String.join(END_LINE, orders);
-        FileUtil.writeAsString(path, content);
-        return path;
+        return start;
     }
 
     /**
@@ -130,5 +140,19 @@ public class VerifyService {
         verifyRepository.saveAll(orders);
     }
 
+    public List<String> verifyOrder(String chanId, Date day){
+        List<String> errors = new ArrayList<>();
+        Date start = getStartOfDate(day);
+        Date end = add24Hours(start);
+        List<String> excessOrders = verifyRepository.queryExcessOrders(chanId, start, end);
+        List<String> missOrders = verifyRepository.queryMissOrders(chanId, start, end);
+        List<String> differentOrders = verifyRepository.queryDifferentOrders(chanId, start, end);
+
+        errors.add("长款订单号：" + String.join(",", excessOrders));
+        errors.add("漏单订单号：" + String.join(",",missOrders));
+        errors.add("不一致订单号：" + String.join(",",differentOrders));
+
+        return errors;
+    }
 
 }
