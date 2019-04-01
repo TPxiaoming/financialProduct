@@ -2,40 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab7a0cf9-4b91-4b8d-8b9b-bd857dd94727" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../financial/.gradle/5.2.1/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../financial/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../financial/.gradle/5.2.1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../financial/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../financial/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../financial/.gradle/vcs-1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../financial/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../financial/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../financial/.idea/libraries/JPA_1_0_JPA_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../financial/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../financial/.idea/modules/com.xiaoming.entity.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../financial/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../financial/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../financial/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../financial/api/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../financial/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../financial/dependencies.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../financial/entity/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../financial/entity/src/main/java/com/xiaoming/entity/Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../financial/entity/src/main/java/com/xiaoming/entity/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../financial/entity/src/main/java/com/xiaoming/entity/enums/OrderStatus.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../financial/entity/src/main/java/com/xiaoming/entity/enums/OrderType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../financial/entity/src/main/java/com/xiaoming/entity/enums/ProductStatus.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../financial/lib/javaee.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../financial/manager/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../financial/quaartz/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../financial/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../financial/swagger/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../financial/util/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/seller/out/production/classes/com/xiaoming/seller/repositories/VerifyRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/seller/out/production/classes/com/xiaoming/seller/repositories/VerifyRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/seller/out/production/classes/com/xiaoming/seller/service/VerifyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/seller/out/production/classes/com/xiaoming/seller/service/VerifyService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/seller/out/test/classes/com/xiaoming/seller/VerifyTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/seller/out/test/classes/com/xiaoming/seller/VerifyTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/seller/src/main/java/com/xiaoming/seller/SellerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/seller/src/main/java/com/xiaoming/seller/SellerApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dependencies.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entity/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entity/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entity/src/main/java/com/xiaoming/entity/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entity/src/main/java/com/xiaoming/entity/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entity/src/main/java/com/xiaoming/entity/enums/OrderStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entity/src/main/java/com/xiaoming/entity/enums/OrderType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entity/src/main/java/com/xiaoming/entity/enums/ProductStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/main/java/com/xiaoming/manager/ManagerApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/main/java/com/xiaoming/manager/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/main/java/com/xiaoming/manager/repositories/ProductRepositories.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/main/java/com/xiaoming/manager/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quartz/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quartz/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seller/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seller/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swagger/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swagger/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seller/out/production/classes/com/xiaoming/seller/SellerApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/seller/out/production/classes/com/xiaoming/seller/SellerApp.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -137,8 +142,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/seller/src/main/java/com/xiaoming/seller/task/VerifyTask.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+            <state relative-caret-position="225">
+              <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#516#517#0" expanded="true" />
@@ -239,7 +244,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="467" />
     <option name="y" value="222" />
     <option name="width" value="1399" />
@@ -525,7 +530,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554120571961" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554120768839" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="D:/idea-project/git/eas-account" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -672,7 +677,7 @@
       <workItem from="1553517091202" duration="1133000" />
       <workItem from="1553518284214" duration="23789000" />
       <workItem from="1554026146075" duration="395000" />
-      <workItem from="1554026997498" duration="6807000" />
+      <workItem from="1554026997498" duration="6968000" />
     </task>
     <task id="LOCAL-00001" summary="对账">
       <created>1554035632181</created>
@@ -681,7 +686,14 @@
       <option name="project" value="LOCAL" />
       <updated>1554035632182</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="定时对账功能">
+      <created>1554120616805</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1554120616805</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -717,11 +729,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101614000" />
+    <option name="totallyTimeSpent" value="101775000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.48633364" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24957265" />
@@ -804,7 +815,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="对账" />
-    <option name="LAST_COMMIT_MESSAGE" value="对账" />
+    <MESSAGE value="定时对账功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="定时对账功能" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1264,8 +1276,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/seller/src/main/java/com/xiaoming/seller/task/VerifyTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+        <state relative-caret-position="225">
+          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#516#517#0" expanded="true" />
